@@ -8,10 +8,12 @@ import javax.persistence.Id;
 public class County {
 
   @Id
+
   @Column(name="countrycode")
   private String countyCode;
   private String name;
   private String href;
+
 
   public String getCountyCode() {
     return countyCode;
