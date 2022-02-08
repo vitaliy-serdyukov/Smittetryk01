@@ -15,26 +15,26 @@ public class InitData implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    County roskilde = new County();
-    roskilde.setCountyCode("0265");
-    roskilde.setName("Roskilde");
-    roskilde.setHref("https://api.dataforsyningen.dk/kommuner/0265");
-    countyRepository.save(roskilde);
+    County county = new County();
+    county.setCountyCode("0265");
+    county.setName("Roskilde");
+    county.setHref("https://api.dataforsyningen.dk/kommuner/0265");
+    countyRepository.save(county);
 
-    roskilde.setCountyCode("0259");
-    roskilde.setName("Køge");
-    roskilde.setHref("https://api.dataforsyningen.dk/kommuner/0259");
-    countyRepository.save(roskilde);
+    county.setCountyCode("0259");
+    county.setName("Køge");
+    county.setHref("https://api.dataforsyningen.dk/kommuner/0259");
+    countyRepository.save(county);
 
-    roskilde.setCountyCode("0259");
-    roskilde.setName("Køge");
-    roskilde.setHref("https://api.dataforsyningen.dk/kommuner/0259");
-    countyRepository.save(roskilde);
+    county.setCountyCode("0259");
+    county.setName("Køge");
+    county.setHref("https://api.dataforsyningen.dk/kommuner/0259");
+    countyRepository.save(county);
 
-    roskilde.setCountyCode("0169");
-    roskilde.setName("Høje-Taastrup");
-    roskilde.setHref("https://api.dataforsyningen.dk/kommuner/0169");
-    countyRepository.save(roskilde);
+    county.setCountyCode("0169");
+    county.setName("Høje-Taastrup");
+    county.setHref("https://api.dataforsyningen.dk/kommuner/0169");
+    countyRepository.save(county);
   }
 
 
